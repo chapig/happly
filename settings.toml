@@ -1,0 +1,13 @@
+# settings.toml
+
+# OpenAI API Key
+openai_key = "YOUR_API_KEY"
+
+# Model to be used (default is gpt-3.5-turbo)
+model = "gpt-3.5-turbo"
+
+# Resume file name and path (default is resume.txt)
+resume_file = "resume.txt"
+
+# Save job openings to file (default is True)
+save_job_openings = true
