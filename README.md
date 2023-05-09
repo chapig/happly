@@ -1,4 +1,5 @@
 # Happly - Personal Job Assistant 🤖
+![happly github](https://github.com/chapig/happly/assets/46666572/5cd6980b-13e5-4952-9084-e4e10245f685)
 
 Happly is a Python-based application designed to automate the job search and cover letter generation process using AI. This personal job assistant scans job openings on [remotive.com](https://remotive.com/) and crafts tailored cover letters based on your resume and the job description. Happly was developed to streamline the job search experience and alleviate stress, particularly for those facing challenges in the job market, such as Venezuelans.
 
