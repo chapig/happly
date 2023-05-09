@@ -1,15 +1,19 @@
 import openai.error
 from colorama import Fore
+from yaspin import yaspin
 
+from settings import save_job_openings
 from src.assistant import assistant_message
 from src.download_remotive import get_jobs
 from src.keywords import keywords
 from src.process_jobs import process_jobs
-from settings import save_job_openings
+
 
 def test_openai_api_connection():
     """Test connection to OpenAI API."""
-    assistant_message("Testing connection to OpenAI API.", color=Fore.LIGHTYELLOW_EX)
+    assistant_message("Validating connection with OpenAI.", color=Fore.LIGHTYELLOW_EX)
+    spinner = yaspin()
+    spinner.start()
     try:
         from src.assistant import job_fits
 
@@ -21,6 +25,9 @@ def test_openai_api_connection():
         assistant_message("Connection to OpenAI API failed due to billing settings. Please check your API key.",
                           color=Fore.LIGHTRED_EX)
         exit(1)
+    finally:
+        spinner.ok("✔")
+        spinner.stop()
 
 
 def search_jobs_for_keywords(resume_keywords):

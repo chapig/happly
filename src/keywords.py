@@ -3,9 +3,11 @@ import textwrap
 
 import openai
 from colorama import Fore
+from yaspin import yaspin
 
-from src.assistant import assistant_message
+from settings import model, prompt_analyze_resume_for_keywords
 from settings import resume as resume_file
+from src.assistant import assistant_message
 
 resume = open(resume_file, "r", encoding="utf-8").read()
 
@@ -38,21 +40,22 @@ def prompt_user_to_use_previous_keywords(file_content):
 
 def get_keywords_from_resume(_resume):
     """Retrieve keywords from the resume using the OpenAI API."""
-
+    spinner = yaspin()
     response = openai.ChatCompletion.create(
         model=model,
         messages=[
             {"role": "system", "content": "You are a helpful assistant that extracts keywords from a resume."},
             {"role": "user",
-             "content": f"Given the following resume, return the keywords that describe the applicant's skills, "
-                        f"and job experience. Examples: Software Development, Customer Service, Design Marketing, "
-                        f"Sales, Product, Business, Data, DevOps / Sysadmin, Finance / Legal, Human Resources, QA, "
-                        f"Writing. Resume: {_resume}"}
+             "content": prompt_analyze_resume_for_keywords.format(resume_text=_resume)}
         ],
         max_tokens=100,
     )
-
-    return response.choices[0].text.strip().replace("Keywords:", "").split(",")
+    if "No resume provided" in response.choices[0].message.content:
+        assistant_message("No resume provided. Please provide a proper resume.", color=Fore.LIGHTRED_EX)
+        exit(1)
+    spinner.ok("✔")
+    spinner.stop()
+    return response.choices[0].message.content.strip().split(",")
 
 
 def keywords(_resume=resume):

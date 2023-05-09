@@ -11,3 +11,27 @@ resume_file = "resume.txt"
 
 # Save job openings to file (default is True)
 save_job_openings = true
+
+prompt_analyze_job_opening_and_resume = """
+Please analyze the following job description and the provided resume of an applicant.
+Based on your evaluation, determine if the applicant's qualifications and experience align
+with the requirements of the job. If the match is strong, respond with 'positive'. If the
+match is weak or non-existent, respond with 'negative'.
+\n\nJob description:\n{job_opening}\n\nResume:\n{resume_text}\n\n"
+"""
+
+prompt_analyze_resume_for_keywords = """
+Given the following resume, return the keywords that describe the applicant's skills,
+and job experience. Examples: Software Development, Customer Service, Design Marketing,
+Sales, Product, Business, Data, DevOps, Sysadmin, Finance, Legal, Human Resources, QA,
+Writing. If the resume is not given, or provided please respond with 'No resume provided'
+Resume: \n{resume_text}
+"""
+
+prompt_write_cover_letter = """
+Please analyze the following job description and the provided resume of an applicant.
+Create a cover letter to better align with the requirements of the job, highlighting relevant
+qualifications and experiences.
+Job description: {job_description}
+Applicant's resume: {resume_text}
+"""
