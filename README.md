@@ -10,21 +10,23 @@ In the future, we plan to expand Happly's capabilities by adding support for mor
 ### Happly will automatically generate a cover letter when it determines that you are a good fit for a job opening
 ![image](https://github.com/chapig/happly/assets/46666572/7ba5c4e1-f2ac-4740-b0cd-11549b22746f)
 
-```markdown
-Dear Hiring Manager,
+#### This is the cover letter it will create:
 
-I am extremely excited to apply for the Python Developer role at Host Wise. The opportunity to add a relevant touch of technology, automation and AI integration to traditional tourism and estate markets resonates with my passions and experience. As a multilingual IT Analyst and Software Developer with a strong background in data analysis, software development, and CRM implementation, I believe I will bring tremendous value to Host Wise's mission to transform the industry of vacation rentals and real estate investment.
+_Dear Hiring Manager,_
 
-As a detail-oriented and highly adaptable individual, I have gained proficiency in programming languages such as Python, Julia, and JavaScript, as well as multiple operating systems and cloud services. This has allowed me to gather and analyze relevant data for businesses and continuously improve its processes by automating and digitalizing them. Additionally, I have experience querying databases like MySQL or PostgreSQL and creating personalized back-office communications to provide property owners with full overviews of their assets and return on investment.
+_I am extremely excited to apply for the Python Developer role at Host Wise. The opportunity to add a relevant touch of technology, automation and AI integration to traditional tourism and estate markets resonates with my passions and experience. As a multilingual IT Analyst and Software Developer with a strong background in data analysis, software development, and CRM implementation, I believe I will bring tremendous value to Host Wise's mission to transform the industry of vacation rentals and real estate investment._
 
-My programming and automation skills have been strengthened through the implementation of Zoho CRM by leveraging Zapier, Python, Zoho Workflows, and Zoho Blueprints to streamline business processes at IP Immigration Pros Inc. Contributing to the largest Latin American NFT project at Philon Group, I developed and deployed multiple Discord bots using the Python Wrapper API for enhanced user engagement and managed client referrals through SQLite, among other tasks.
+_As a detail-oriented and highly adaptable individual, I have gained proficiency in programming languages such as Python, Julia, and JavaScript, as well as multiple operating systems and cloud services. This has allowed me to gather and analyze relevant data for businesses and continuously improve its processes by automating and digitalizing them. Additionally, I have experience querying databases like MySQL or PostgreSQL and creating personalized back-office communications to provide property owners with full overviews of their assets and return on investment._
 
-I believe that my experience, skills, and passion for technology, coupled with my driven attitude and ability to innovate, make me a strong candidate for the role at Host Wise. I am not only willing to learn new skills but also passionate about doing so. The opportunity to work remotely with a flexible schedule and a supportive team that values impact, being data and experiment-driven, and having fun while doing it is an added bonus that demonstrates Host Wise's commitment to ensuring its team members have a healthy work-life balance.
+_My programming and automation skills have been strengthened through the implementation of Zoho CRM by leveraging Zapier, Python, Zoho Workflows, and Zoho Blueprints to streamline business processes at IP Immigration Pros Inc. Contributing to the largest Latin American NFT project at Philon Group, I developed and deployed multiple Discord bots using the Python Wrapper API for enhanced user engagement and managed client referrals through SQLite, among other tasks._
 
-Thank you for considering my application for this role. I look forward to the opportunity to contribute my skills and experience to Host Wise.
+_I believe that my experience, skills, and passion for technology, coupled with my driven attitude and ability to innovate, make me a strong candidate for the role at Host Wise. I am not only willing to learn new skills but also passionate about doing so. The opportunity to work remotely with a flexible schedule and a supportive team that values impact, being data and experiment-driven, and having fun while doing it is an added bonus that demonstrates Host Wise's commitment to ensuring its team members have a healthy work-life balance._
 
-Best regards,
-```
+_Thank you for considering my application for this role. I look forward to the opportunity to contribute my skills and experience to Host Wise._
+
+_Best regards,_
+
+
 
 ### Happly will share its thoughts when it believes that you do not fit a particular job opening
 ![image](https://github.com/chapig/happly/assets/46666572/f8362298-20c9-4c1f-828c-d1478a0c89bd)
